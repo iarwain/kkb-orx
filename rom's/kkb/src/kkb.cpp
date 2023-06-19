@@ -28,10 +28,7 @@ void kkb::Update(const orxCLOCK_INFO &_rstInfo)
   else if(orxInput_HasBeenActivated("Restart"))
   {
     orxConfig_PushSection("Runtime");
-    if(ScrollObject *poScene = GetObject(orxConfig_GetU64("Scene")))
-    {
-      poScene->SetLifeTime(orxFLOAT_0);
-    }
+    DeleteObject(GetObject(orxConfig_GetU64("Scene")));
     orxConfig_PopSection();
     CreateObject("Scene");
   }

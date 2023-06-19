@@ -81,8 +81,5 @@ orxBOOL Player::OnCollide(ScrollObject *_poCollider, orxBODY_PART *_pstPart, orx
     _poCollider->SetAnim("Crash");
   }
 
-  // ... and go to the game over
-  kkb::GetInstance().CreateObject("GameOver");
-
   return orxTRUE;
 }
