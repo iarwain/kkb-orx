@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{CC767481-D991-FF48-8E52-9E91CDD68C45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{E46ECAAE-0745-DB48-A108-8C0B212FFF68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lz4">
+      <UniqueIdentifier>{124F8D5B-00E6-0D4E-BBA2-1F955F6F5448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Scroll">
+      <UniqueIdentifier>{E2673EC1-9D59-F048-AD38-E425017267F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inline">
+      <UniqueIdentifier>{F8C82171-25E1-244D-9189-935851C9BB60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bundle">
+      <UniqueIdentifier>{7C67A00D-02EC-5E48-A61F-713C17A1B185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{CE32332F-4C2E-6C4F-A37E-EB36AE68D552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{BABE4EDB-7CC0-1F44-A8B3-CF75B37B8BD9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\Scroll\Scroll.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\include\Scroll\ScrollBase.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\include\Scroll\ScrollEd.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\include\Scroll\ScrollObject.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\include\orxBundleData.inc">
+      <Filter>bundle</Filter>
+    </None>
+    <None Include="..\..\premake4.lua">
+      <Filter>build</Filter>
+    </None>
+    <None Include="..\..\..\data\config\bird.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\cloud.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\CreationTemplate.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\kkb.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\kkbd.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\kkbp.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\music.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\plane.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\player.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\SettingsTemplate.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\sound.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\ui.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\water.ini">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\kkb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\orxBundle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Player.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lz4\lz4.h">
+      <Filter>include\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lz4\lz4hc.h">
+      <Filter>include\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\Scroll.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\ScrollBase.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\ScrollEd.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\ScrollObject.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\kkb.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

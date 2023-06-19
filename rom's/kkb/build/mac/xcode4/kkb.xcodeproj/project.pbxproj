@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E2C554318DB29E64FFB4C0C /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77004DDA62806CE078F70680 /* Player.cpp */; };
+		6ADD148744C84BB3519E0ACE /* kkb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E598C3303614D27931DC2 /* kkb.cpp */; };
+		5EAD573D105A638B798B273E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020208382C16056C31463219 /* Foundation.framework */; };
+		302E55E84689072D25D91F7F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C15F54737413F877722AE1 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36C10CE05A6E567576FC4F81 /* premake4.lua */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.lua; name = "premake4.lua"; path = "../../premake4.lua"; sourceTree = "<group>"; };
+		3DF4744C6ED973E45E5E6B12 /* orxBundleData.inc */ = {isa = PBXFileReference; lastKnownFileType = text; name = "orxBundleData.inc"; path = "../../../include/orxBundleData.inc"; sourceTree = "<group>"; };
+		2A655CEA50F5087243CE5634 /* CreationTemplate.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CreationTemplate.ini"; path = "../../../data/config/CreationTemplate.ini"; sourceTree = "<group>"; };
+		53C3764750D67FC4685B7AE5 /* SettingsTemplate.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SettingsTemplate.ini"; path = "../../../data/config/SettingsTemplate.ini"; sourceTree = "<group>"; };
+		190B4D3F14DF20B766B4631B /* bird.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "bird.ini"; path = "../../../data/config/bird.ini"; sourceTree = "<group>"; };
+		21FC2B88550A7C057AC048FD /* cloud.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "cloud.ini"; path = "../../../data/config/cloud.ini"; sourceTree = "<group>"; };
+		4EA53D7F3EAC2A6350353FCE /* kkb.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "kkb.ini"; path = "../../../data/config/kkb.ini"; sourceTree = "<group>"; };
+		3A0B6BAB43724D1338826BB3 /* kkbd.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "kkbd.ini"; path = "../../../data/config/kkbd.ini"; sourceTree = "<group>"; };
+		06561BB865E779C87289080D /* kkbp.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "kkbp.ini"; path = "../../../data/config/kkbp.ini"; sourceTree = "<group>"; };
+		31567C68791D11336682754C /* music.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "music.ini"; path = "../../../data/config/music.ini"; sourceTree = "<group>"; };
+		267B1D3A714A06A6229D4886 /* plane.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "plane.ini"; path = "../../../data/config/plane.ini"; sourceTree = "<group>"; };
+		7F8D5DA7017E4477753E2644 /* player.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "player.ini"; path = "../../../data/config/player.ini"; sourceTree = "<group>"; };
+		77CF094966BB6C3A47EC5F38 /* sound.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "sound.ini"; path = "../../../data/config/sound.ini"; sourceTree = "<group>"; };
+		0D5A0D4F7B0E02E86A4520DB /* ui.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ui.ini"; path = "../../../data/config/ui.ini"; sourceTree = "<group>"; };
+		3AC269050B8978885E9A6526 /* water.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "water.ini"; path = "../../../data/config/water.ini"; sourceTree = "<group>"; };
+		3715489850E756E727D10D40 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Player.h"; path = "../../../include/Player.h"; sourceTree = "<group>"; };
+		21BA75A148A821CE2460248E /* Scroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Scroll.h"; path = "../../../include/Scroll/Scroll.h"; sourceTree = "<group>"; };
+		36850A8B6C6979F2111A40CC /* ScrollBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ScrollBase.h"; path = "../../../include/Scroll/ScrollBase.h"; sourceTree = "<group>"; };
+		74EA66E11E3C67DD35911F9E /* ScrollEd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ScrollEd.h"; path = "../../../include/Scroll/ScrollEd.h"; sourceTree = "<group>"; };
+		2F2F01C406DB3F0346764DC7 /* ScrollObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ScrollObject.h"; path = "../../../include/Scroll/ScrollObject.h"; sourceTree = "<group>"; };
+		168639234FEA702E004A612F /* kkb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "kkb.h"; path = "../../../include/kkb.h"; sourceTree = "<group>"; };
+		68B36D70244F49DD6E66261D /* lz4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "lz4.h"; path = "../../../include/lz4/lz4.h"; sourceTree = "<group>"; };
+		20315ABC4B75082915A211EA /* lz4hc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "lz4hc.h"; path = "../../../include/lz4/lz4hc.h"; sourceTree = "<group>"; };
+		20B05473181672D56A55428F /* orxBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "orxBundle.h"; path = "../../../include/orxBundle.h"; sourceTree = "<group>"; };
+		7FF9532A3FF821DC30F21C5F /* Scroll.inl */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Scroll.inl"; path = "../../../include/Scroll/Scroll.inl"; sourceTree = "<group>"; };
+		2B407991126E1E58114965DB /* ScrollBase.inl */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ScrollBase.inl"; path = "../../../include/Scroll/ScrollBase.inl"; sourceTree = "<group>"; };
+		4BA16CCE5AF77FE155A30EC9 /* ScrollEd.inl */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ScrollEd.inl"; path = "../../../include/Scroll/ScrollEd.inl"; sourceTree = "<group>"; };
+		5C43508347676AC11FD63D9C /* ScrollObject.inl */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ScrollObject.inl"; path = "../../../include/Scroll/ScrollObject.inl"; sourceTree = "<group>"; };
+		77004DDA62806CE078F70680 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Player.cpp"; path = "../../../src/Player.cpp"; sourceTree = "<group>"; };
+		5F1E598C3303614D27931DC2 /* kkb.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "kkb.cpp"; path = "../../../src/kkb.cpp"; sourceTree = "<group>"; };
+		020208382C16056C31463219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "/System/Library/Frameworks/Foundation.framework"; sourceTree = "<absolute>"; };
+		33C15F54737413F877722AE1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "/System/Library/Frameworks/AppKit.framework"; sourceTree = "<absolute>"; };
+		5CB42D846A8C537B6D4E43E5 /* kkbd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "kkbd"; path = "kkbd"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FD704D362F07DD908112881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EAD573D105A638B798B273E /* Foundation.framework in Frameworks */,
+				302E55E84689072D25D91F7F /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B3D6EE128516A5B36DB4074 /* kkb */ = {
+			isa = PBXGroup;
+			children = (
+				218E630215106D95622F6B52 /* build */,
+				6FD748902AE631557CE70800 /* bundle */,
+				75BD43DB4DD156EE7ACA750F /* config */,
+				27691E56022237F801F873E2 /* include */,
+				3BE34F4E46867D6830544948 /* inline */,
+				1DEC3E0310D65C8454B72357 /* src */,
+				6D960CA14208702928F66A72 /* Frameworks */,
+				0B3D70E46C7F3E6D5B126BC7 /* Products */,
+			);
+			name = "kkb";
+			sourceTree = "<group>";
+		};
+		218E630215106D95622F6B52 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				36C10CE05A6E567576FC4F81 /* premake4.lua */,
+			);
+			name = "build";
+			sourceTree = "<group>";
+		};
+		6FD748902AE631557CE70800 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				3DF4744C6ED973E45E5E6B12 /* orxBundleData.inc */,
+			);
+			name = "bundle";
+			sourceTree = "<group>";
+		};
+		75BD43DB4DD156EE7ACA750F /* config */ = {
+			isa = PBXGroup;
+			children = (
+				2A655CEA50F5087243CE5634 /* CreationTemplate.ini */,
+				53C3764750D67FC4685B7AE5 /* SettingsTemplate.ini */,
+				190B4D3F14DF20B766B4631B /* bird.ini */,
+				21FC2B88550A7C057AC048FD /* cloud.ini */,
+				4EA53D7F3EAC2A6350353FCE /* kkb.ini */,
+				3A0B6BAB43724D1338826BB3 /* kkbd.ini */,
+				06561BB865E779C87289080D /* kkbp.ini */,
+				31567C68791D11336682754C /* music.ini */,
+				267B1D3A714A06A6229D4886 /* plane.ini */,
+				7F8D5DA7017E4477753E2644 /* player.ini */,
+				77CF094966BB6C3A47EC5F38 /* sound.ini */,
+				0D5A0D4F7B0E02E86A4520DB /* ui.ini */,
+				3AC269050B8978885E9A6526 /* water.ini */,
+			);
+			name = "config";
+			sourceTree = "<group>";
+		};
+		27691E56022237F801F873E2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3715489850E756E727D10D40 /* Player.h */,
+				119B6F053E096726058208C1 /* Scroll */,
+				168639234FEA702E004A612F /* kkb.h */,
+				1F0A474A5EC40696279211B6 /* lz4 */,
+				20B05473181672D56A55428F /* orxBundle.h */,
+			);
+			name = "include";
+			sourceTree = "<group>";
+		};
+		119B6F053E096726058208C1 /* Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				21BA75A148A821CE2460248E /* Scroll.h */,
+				36850A8B6C6979F2111A40CC /* ScrollBase.h */,
+				74EA66E11E3C67DD35911F9E /* ScrollEd.h */,
+				2F2F01C406DB3F0346764DC7 /* ScrollObject.h */,
+			);
+			name = "Scroll";
+			sourceTree = "<group>";
+		};
+		1F0A474A5EC40696279211B6 /* lz4 */ = {
+			isa = PBXGroup;
+			children = (
+				68B36D70244F49DD6E66261D /* lz4.h */,
+				20315ABC4B75082915A211EA /* lz4hc.h */,
+			);
+			name = "lz4";
+			sourceTree = "<group>";
+		};
+		3BE34F4E46867D6830544948 /* inline */ = {
+			isa = PBXGroup;
+			children = (
+				7FF9532A3FF821DC30F21C5F /* Scroll.inl */,
+				2B407991126E1E58114965DB /* ScrollBase.inl */,
+				4BA16CCE5AF77FE155A30EC9 /* ScrollEd.inl */,
+				5C43508347676AC11FD63D9C /* ScrollObject.inl */,
+			);
+			name = "inline";
+			sourceTree = "<group>";
+		};
+		1DEC3E0310D65C8454B72357 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				77004DDA62806CE078F70680 /* Player.cpp */,
+				5F1E598C3303614D27931DC2 /* kkb.cpp */,
+			);
+			name = "src";
+			sourceTree = "<group>";
+		};
+		6D960CA14208702928F66A72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				020208382C16056C31463219 /* Foundation.framework */,
+				33C15F54737413F877722AE1 /* AppKit.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		0B3D70E46C7F3E6D5B126BC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CB42D846A8C537B6D4E43E5 /* kkbd */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E1E56E951D13E2A6B1F32B4 /* kkb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEC621F334F1D521BC02B86 /* Build configuration list for PBXNativeTarget "kkb" */;
+			buildPhases = (
+				59B37A9C09C26A1B35640D80 /* Resources */,
+				1A772A20342814FA37F47828 /* Sources */,
+				0FD704D362F07DD908112881 /* Frameworks */,
+				9607AE3710C85E8F00CD1376 /* Postbuild */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kkb";
+			productInstallPath = "$(HOME)/bin";
+			productName = "kkb";
+			productReference = 5CB42D846A8C537B6D4E43E5 /* kkbd */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "kkb" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 5B3D6EE128516A5B36DB4074 /* kkb */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E1E56E951D13E2A6B1F32B4 /* kkbd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59B37A9C09C26A1B35640D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9607AE3710C85E8F00CD1376 /* Postbuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Postbuild;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../lib/dynamic/liborx*.dylib ../../../bin";
+		};
+/* End PBXShellScriptBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+		1A772A20342814FA37F47828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2C554318DB29E64FFB4C0C /* Player.cpp in Sources */,
+				6ADD148744C84BB3519E0ACE /* kkb.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4347238B34FA7169139169AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../bin;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "kkbd";
+			};
+			name = "Debug";
+		};
+		35E712B420265CB3470F7BDE /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../bin;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "kkbp";
+			};
+			name = "Profile";
+		};
+		3FB27112438621E02962001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../bin;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "kkb";
+			};
+			name = "Release";
+		};
+		7F27439E2EE3758730F31694 /* Bundle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../bin;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "kkb";
+			};
+			name = "Bundle";
+		};
+		28C70194659F1C15071C383E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__orxDEBUG__",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../include",
+					"../../../include/Scroll",
+					"../../../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../lib/dynamic",
+				);
+				OBJROOT = "obj/x64/Debug";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-stdlib=libc++",
+					"-gdwarf-2",
+					"-Wno-unused-function",
+					"-Wno-write-strings",
+				);
+				OTHER_LDFLAGS = (
+					"-lorxd",
+					"-stdlib=libc++",
+					"-dead_strip",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../../bin";
+			};
+			name = "Debug";
+		};
+		45F8218946ED3D6A39222EDD /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__orxPROFILER__",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../include",
+					"../../../include/Scroll",
+					"../../../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../lib/dynamic",
+				);
+				OBJROOT = "obj/x64/Profile";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-stdlib=libc++",
+					"-gdwarf-2",
+					"-Wno-unused-function",
+					"-Wno-write-strings",
+				);
+				OTHER_LDFLAGS = (
+					"-lorxp",
+					"-stdlib=libc++",
+					"-dead_strip",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../../bin";
+			};
+			name = "Profile";
+		};
+		756725932F88223338C308CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../include",
+					"../../../include/Scroll",
+					"../../../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../lib/dynamic",
+				);
+				OBJROOT = "obj/x64/Release";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-stdlib=libc++",
+					"-gdwarf-2",
+					"-Wno-unused-function",
+					"-Wno-write-strings",
+				);
+				OTHER_LDFLAGS = (
+					"-lorx",
+					"-stdlib=libc++",
+					"-dead_strip",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../../bin";
+			};
+			name = "Release";
+		};
+		0C302D5123C153E666486F23 /* Bundle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../include",
+					"../../../include/Scroll",
+					"../../../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../lib/dynamic",
+				);
+				OBJROOT = "obj/x64/Bundle";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-stdlib=libc++",
+					"-gdwarf-2",
+					"-Wno-unused-function",
+					"-Wno-write-strings",
+				);
+				OTHER_LDFLAGS = (
+					"-lorx",
+					"-stdlib=libc++",
+					"-dead_strip",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../../bin";
+			};
+			name = "Bundle";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BEC621F334F1D521BC02B86 /* Build configuration list for PBXNativeTarget "kkbd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4347238B34FA7169139169AF /* Debug */,
+				35E712B420265CB3470F7BDE /* Profile */,
+				3FB27112438621E02962001A /* Release */,
+				7F27439E2EE3758730F31694 /* Bundle */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "kkb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C70194659F1C15071C383E /* Debug */,
+				45F8218946ED3D6A39222EDD /* Profile */,
+				756725932F88223338C308CE /* Release */,
+				0C302D5123C153E666486F23 /* Bundle */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
