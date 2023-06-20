@@ -58,7 +58,7 @@ void Player::Update(const orxCLOCK_INFO &_rstInfo)
   SetSpeed({orxS2F(s32Force) * orxConfig_GetFloat("PlaneSpeed"), 0.0f, 0.0f});
 
   // Anim
-  const orxSTRING zAnim = "Idle";
+  const orxSTRING zAnim = orxNULL;
   if(s32Force < 0)
   {
     zAnim = "Left";
