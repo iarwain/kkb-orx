@@ -35,6 +35,7 @@ void Player::Update(const orxCLOCK_INFO &_rstInfo)
   orxVECTOR vPos, vSize;
 
   orxConfig_PushSection("Runtime");
+  orxConfig_SetS32("Force", s32Force);
   ScrollObject *poScene = kkb::GetInstance().GetObject(orxConfig_GetU64("Scene"));
   orxConfig_PopSection();
   if(poScene)
